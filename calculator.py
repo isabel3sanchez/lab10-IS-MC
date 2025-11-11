@@ -1,12 +1,21 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+# https://github.com/newmanhw/lab10-swe
+# Partner 1: Isabel Sanchez
+# Partner 2: Moline Charles
 
-One function per operation, in order.
-"""
-# First example
 import math
 
+def square_root(a):
+    try:
+        if a < 0:
+            raise ValueError
+        return math.sqrt(a)
+    except ValueError as err:
+        raise err
+def hypotenuse(a, b):
+    try:
+        return math.hypot(a, b)
+    except Exception as err:
+        raise err
 def add(a, b):
     return a + b
 def sub(a, b):
