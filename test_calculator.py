@@ -1,3 +1,7 @@
+# https://github.com/isabel3sanchez/lab10-IS-MC.git
+# Partner 1: Isabel Sanchez
+# Partner 2: Moline Charles
+
 import unittest
 import math
 from calculator import *
@@ -22,7 +26,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mul(10, 5), 50)
 
     def test_divide(self): # 3 assertions
-        self.assertEqual(div(40, 2), 20)
+        self.assertEqual(div(2, 40), 20)
         self.assertEqual(div(4, -8), -2)
         with self.assertRaises(ZeroDivisionError):
             div(0, 5)
@@ -34,7 +38,7 @@ class TestCalculator(unittest.TestCase):
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     div(0, 5)
         with self.assertRaises(ZeroDivisionError):
-            div(5, 0)
+            div(0, 5)
 
     def test_logarithm(self): # 3 assertions
         self.assertEqual(log(2, 8), 3)
