@@ -1,3 +1,7 @@
+# https://github.com/isabel3sanchez/lab10-IS-MC.git
+# Partner 1: Isabel Sanchez
+# Partner 2: Moline Charles
+
 import unittest
 import math
 from calculator import *
